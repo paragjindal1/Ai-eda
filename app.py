@@ -42,7 +42,7 @@ if not GOOGLE_API_KEY or not GROQ_API_KEY:
     st.warning("Please provide both Google API Key and Groq API Key in the sidebar to run the agent.")
 else:
     gemini_llm = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash",
+        model="gemini-3.5-flash",
         google_api_key=GOOGLE_API_KEY
     )
 
